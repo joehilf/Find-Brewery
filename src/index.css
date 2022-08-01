@@ -1,0 +1,284 @@
+/* 
+** File Name: index.css
+** Written By: Joseph Hilferty 
+** Last Modified: July 30th, 2022
+*/
+
+body {
+  background-color: rgb(209, 196, 161);
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.parent {
+  display: flex;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+}
+
+.introduction {
+
+  font-family: Arial, 'Times New Roman';
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+/*Links*/
+  a {
+    color: darkolivegreen;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color:rgb(255, 191, 52);
+}
+
+/*Icons*/
+  .beerIcon {
+    height: 55px;
+    width: 50px;
+    position: absolute;
+      left: 13px;
+      bottom: 47px;
+  }
+
+  .searchIcon {
+    color: #757575;
+    
+    position: relative;
+      left: -40px;
+      bottom: -2px;
+}
+
+/*Elements in the Header*/
+  .header {
+    background-color: rgb(255, 191, 52);
+    color: white;
+
+    border-bottom: 7px ridge lightslategray;
+
+    font-family: Arial, 'Times New Roman';
+    text-shadow: black 1px 0 10px;
+
+    height: 165px;
+    position: relative;
+      top: -32px;
+  }
+
+  .title {
+    font-size: 45px;
+
+    position: absolute;
+      left: 70px;
+      bottom: 25px;
+  }
+
+  .subtitle {
+    position: absolute;
+      left: 72px;
+      bottom: 30px;
+}
+
+/*Search Bar*/
+  select{
+    background-color: rgb(255, 191, 52);
+    color: white;
+
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    font-family: Arial, 'Times New Roman';
+    font-size: 20px;
+    text-align: center;
+
+    outline: none;
+
+    height: 42px !important;
+    width: 150px !important;
+    position: relative;
+      left: 11px;
+      top: 2px;
+  }
+
+
+  .search-field {
+      justify-content: center;
+  }
+
+  .search-field .input {
+    color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+    background-color: white;
+
+    border: 1px solid #eaeaea;
+
+    font-size: 14px;
+    font-weight: bold;
+  
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 500px;
+  }
+
+  .search-field .input:hover {
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+  }
+
+  .search-field .input:focus {
+    border: 2px solid rgb(255, 191, 52);
+
+    outline: none;
+
+  }
+
+  .search-field .search-button {
+    background-color: rgb(255, 191, 52);
+    color: white;
+
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-family: Arial, 'Times New Roman';
+    font-size: 20px;
+    text-align: center;
+
+    outline: none;
+
+    height: 42px !important;
+    width: 150px !important;
+    position: relative;
+      right: 26px;
+      top: 2px;
+}
+
+/*Elements in the Table of Breweries*/
+  .wrapper {
+    background-color: white;
+
+    overflow: hidden;
+
+    padding: 25px;
+    margin: 25px;
+    height: 820px;
+    width: 800px;
+  
+  }
+
+  .breweries-table {
+    background-color: white;
+    color: gray;
+
+    border-collapse: collapse;
+
+    font-size: 20px;
+  }
+
+  th {
+    color: black;
+
+    border-bottom: 1px solid gray;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  td {
+    border-bottom: 1px solid gray;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    height: 70px;
+  }
+
+  .breweries-table .name {
+    width: 470px;
+  }
+
+  .breweries-table .street {
+    font-size: 15px;
+  }
+
+  .breweries-table .location {
+    width: 200px;
+  }
+
+  .breweries-table .type {
+    width: 120px;
+}
+
+/*Next and Previous Buttons*/
+  button {
+    color: white;
+    background-color: darkolivegreen;
+
+    border: 1px solid #eaeaea;
+
+    box-shadow:black 1px 0 3px;
+
+    font-weight: bold;
+
+    width: 110px;
+    height: 30px;
+  }
+
+  button:hover {
+    color: black;
+
+    cursor: pointer;
+  }
+
+  .navigation {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    position: relative;
+      top: 20px;
+  }
+
+  #next {
+    float: right;
+  }
+
+  #previous {
+    display: none;
+  }
+
+  .navigation .page-tracker {
+    text-align: center;
+}
+
+/*All elements within the info dump area*/ 
+  #information {
+    display: none;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    padding: 25px;
+    margin: 25px;
+  }
+
+  #information .info-title {
+    color: slategrey;
+  }
+
+  hr {
+    background-color: black;
+
+    text-align: none;
+
+    height: 3px;
+    width: 805px;
+    float: left;
+  }
